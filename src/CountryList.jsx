@@ -7,7 +7,11 @@ function CountryList({ countries, onSelect }) {
           onClick={() => onSelect(country)}
           className="cursor-pointer border rounded-xl p-3 hover:bg-gray-100"
         >
-          <img src={country.flags.svg} alt={country.name.common} className="w-full h-24 object-cover rounded-md" />
+          <img
+            src={country.flags.svg}
+            alt={country.name.common}
+            className="w-16 h-10 object-contain rounded-md mx-auto"
+            />
           <h2 className="text-lg font-semibold mt-2">{country.name.common}</h2>
           <p className="text-sm text-gray-600">{country.region}</p>
         </div>
