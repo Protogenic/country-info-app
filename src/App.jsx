@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="p-4 font-sans">
-      <h1 className="text-2xl mb-4">🌍 Страны мира</h1>
+      <h1 className="text-2xl mb-4">Страны мира</h1>
       {selectedCountry ? (
         <CountryDetail country={selectedCountry} onBack={() => setSelectedCountry(null)} />
       ) : (
